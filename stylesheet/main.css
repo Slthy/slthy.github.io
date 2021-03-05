@@ -1,0 +1,35 @@
+p {
+  margin: 40px;
+}
+h1 {
+  margin: 40px;
+}
+h2 {
+  margin: 40px;
+}
+h3 {
+  margin: 40px;
+  color: red;
+}
+h6 {
+  margin: 40px;
+}
+a:link {
+  color: Grey;
+  background-color: transparent;
+}
+
+a:visited {
+  color: Grey;
+  background-color: transparent;
+}
+
+a:hover {
+  color: Grey;
+  background-color: transparent;
+}
+
+a:active {
+  color: Grey;
+  background-color: transparent;
+}
