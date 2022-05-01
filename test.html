@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+  <script>
+    const url = "https://pastebin.com/api/api_login.php"
+    const data = {
+      "api_dev_key": "P2evBxKN285xoolB4EEtTyifydbe91WD",
+      "api_user_name": "slthy",
+      "api_user_password": "bowcuf-8pasdU-digfoj"
+    }
+    const res = await fetch('https://pastebin.com/api/api_login.php', {
+        method: 'POST',
+        body: new URLSearchParams({
+            'api_dev_key': 'P2evBxKN285xoolB4EEtTyifydbe91WD',
+            'api_user_name': 'slthy',
+            'api_user_password': 'bowcuf-8pasdU-digfoj'
+        })
+    });
+    console.log(res)
+  </script>
+</body>
+</html>
+
+
+curl -X POST -d 'api_dev_key=P2evBxKN285xoolB4EEtTyifydbe91WD' -d 'api_user_name=slthy' -d 'api_user_password=bowcuf-8pasdU-digfoj' "https://pastebin.com/api/api_login.php"
