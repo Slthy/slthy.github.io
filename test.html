@@ -16,13 +16,13 @@
       }
       const res = fetch('https://pastebin.com/api/api_login.php', {
           method: 'POST',
+          mode: 'no-cors',
           body: new URLSearchParams({
               'api_dev_key': 'P2evBxKN285xoolB4EEtTyifydbe91WD',
               'api_user_name': 'slthy',
               'api_user_password': 'bowcuf-8pasdU-digfoj'
           })
-      });
-      console.log(res)
+      }).then(res=>{console.log(res)});
     </script>
   </body>
 </html>
