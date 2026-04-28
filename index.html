@@ -1,41 +1,59 @@
 <!doctype HTML>
 <html lang="it">
-	<head>
-		<link rel="stylesheet" href="./stylesheet.css">
-		<title>Home</title>
-	</head>
-	<body>
+  <head>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Borsato</title>
+  </head>
+  <body>
     <header>
       <a href="./index.html">
         <h1 class="nameLink">Borsato Alessandro</h1>
       </a>
-  
+
       <div class="github">
         <a href="https://github.com/Slthy">
           <div class="githubLink">
-            <img 
-                class="homeGithubPic" 
-                title="Github Page"
-                alt="Borsato Alessandro's Github profile picture" 
-              >
-              <h1 class=gitSlash>&ThinSpace;/Slthy</h1>
+            <img
+              class="homeGithubPic"
+              title="Github Page"
+              alt="Borsato Alessandro's Github profile picture"
+            >
+            <h1 class="gitSlash">&ThinSpace;/Slthy</h1>
           </div>
         </a>
       </div>
-  
+
       <div class="menu">
         <a href="./projects.html">
           <h2 class="menuText">projects</h2>
         </a>
         <a href="./lastSeen.html">
-          <h2 class="menuText">interesting things</h2>
+          <h2 class="menuText">now</h2>
         </a>
-        <!--
-        <a class="menuText" href="./aboutme.html">
-          <h2>about me</h2>
-        </a>
-        -->
       </div>
     </header>
-	</body>
+
+    <main class="heroLayout">
+      <section class="heroCard">
+        <p class="tag">Data • Software • Research</p>
+        <h2 class="heroTitle">I build tools that turn messy data into useful systems.</h2>
+        <p class="heroText">
+          I am Alessandro Borsato, a developer focused on data-heavy products, scraping pipelines,
+          and research-driven software. Most of my work sits at the intersection of reliability,
+          performance, and practical UX.
+        </p>
+        <p class="heroText">
+          I enjoy creating small systems that scale well: from sports-data workflows to collaborative
+          products, with clean interfaces and straightforward engineering choices.
+        </p>
+      </section>
+
+      <aside class="portraitCard">
+        <img class="portrait" src="https://github.com/Slthy.png" alt="Portrait of Alessandro Borsato">
+        <p class="portraitCaption">A face to the code. Replace with your favorite portrait anytime.</p>
+      </aside>
+    </main>
+  </body>
 </html>
