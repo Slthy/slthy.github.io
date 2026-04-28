@@ -69,8 +69,7 @@ header {
 
 .projectContainer,
 .lastSeenContainer,
-.heroCard,
-.portraitCard {
+.heroCard {
   padding: 18px 22px;
   border: 1px solid #d0d0d0;
   border-radius: 14px;
@@ -112,19 +111,7 @@ a {
   font-size: 1.05rem;
 }
 
-.portrait {
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 1px solid #dadada;
-}
 
-.portraitCaption {
-  margin-bottom: 0;
-  font-size: 0.95rem;
-  color: #555;
-}
 
 .homeGithubPic:hover ~ .gitSlash,
 .projectName:hover,
