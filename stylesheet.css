@@ -21,26 +21,30 @@ header {
 .nameLink {
   font-size: clamp(2.1rem, 4vw, 3.2rem);
   margin: 0;
+  transition: color 0.2s ease;
 }
 
-.githubLink {
+.identity {
   display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 75px;
+  align-items: center;
+  gap: 0.65em;
+}
+
+.githubIconLink {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 0.4em;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #121212;
+  transition: background-color 0.2s ease;
 }
 
 .homeGithubPic {
-  content: url("./assets/github-white.png");
-  width: 75px;
-  height: 75px;
-}
-
-.gitSlash {
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  margin: 0;
+  width: 28px;
+  height: 28px;
+  display: block;
 }
 
 .menu {
@@ -111,13 +115,16 @@ a {
   font-size: 1.05rem;
 }
 
+.identity:hover .nameLink {
+  color: #a7a7a7;
+}
 
+.identity:hover .githubIconLink {
+  background-color: #6d6d6d;
+}
 
-.homeGithubPic:hover ~ .gitSlash,
 .projectName:hover,
-.menuText:hover,
-.nameLink:hover,
-.gitSlash:hover {
+.menuText:hover {
   color: #a7a7a7;
 }
 
